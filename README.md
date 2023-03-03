@@ -5,6 +5,7 @@ Uma API para o Sistema de controle de gastos
 ## Endpoints
 - Diário 
     - Listar alimentos
+    - Listar macronutrientes dos alimentos
     - Listar liquidos
    
 - Perfil
