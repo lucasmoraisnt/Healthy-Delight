@@ -18,7 +18,7 @@ Uma API para o Sistema de controle de gastos
 --- 
 
 ### Cadastrar pessoa
-`POST `/projeto/api/pessoa
+`POST `/healthydelight/api/pessoa
 
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
@@ -37,7 +37,7 @@ Uma API para o Sistema de controle de gastos
 | 400 | erro na validação de dados da requisição
 
 ### Cadastrar alimento
-`POST `/projeto/api/alimento
+`POST `/healthydelight/api/alimento
 
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
@@ -45,9 +45,7 @@ Uma API para o Sistema de controle de gastos
 | id_alimento | long | sim | é o id do alimento a ser cadastrado
 | kcal | float | sim | é a quantidade de kcal que uma porção desse alimento possui
 | porcao | int | sim | é a quantidade de gramas que uma porção desse alimento possui, deve ser informado em gramas (g)
-| proteina | float | não | é a quantidade de proteinas que o alimento possui em uma porção, deve ser informado em gramas (g)
-| gordura | float | não | é a quantidade de gordura que o alimento possui em uma porção, deve ser informado em gramas (g)
-| carboidrato | float | não | é quantidade de carboidratos que o alimento possui em uma porção, deve ser informado em gramas (g)
+
 
 **Códigos de Respostas**
 | código | descrição
@@ -56,18 +54,24 @@ Uma API para o Sistema de controle de gastos
 | 400 | erro na validação de dados da requisição
 
 ### Cadastrar liquido
-`POST `/projeto/api/liquido
+`POST `/healthydelight/api/liquido
 
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
 | liquido | text | sim | é o nome do liquido a ser cadastrado
 | id_liquido | int | sim | é o id do liquido a ser cadastrado
-| kcal | int | sim | é a quantidade de kcal que uma porção desse liquido possui
+| kcal | float | sim | é a quantidade de kcal que uma porção desse liquido possui
 | porcao | int | sim | é a quantidade de ml que uma porção desse liquido possui, deve ser informado em mililitros (ml)
-| proteina | int | não | é a quantidade de proteinas que o liquido possui em uma porção, deve ser informado em gramas (g)
-| gordura | int | não | é a quantidade de gordura que o liquido possui em uma porção, deve ser informado em gramas (g)
-| carboidrato | int | não | é quantidade de carboidratos que o liquido possui em uma porção, deve ser informado em gramas (g)
 
+
+### Cadastrar Macronutrientes
+`POST `/healthydelight/api/macronutrientes
+
+| campo | tipo | obrigatório | descriçãos
+| --- | :---: | :---: | ---
+| proteina | float | não | é a quantidade de proteinas que o liquido possui em uma porção, deve ser informado em gramas (g)
+| gordura | float | não | é a quantidade de gordura que o liquido possui em uma porção, deve ser informado em gramas (g)
+| carboidrato | float | não | é quantidade de carboidratos que o liquido possui em uma porção, deve ser informado em gramas (g)
 
 **Códigos de Respostas**
 | código | descrição
@@ -77,7 +81,7 @@ Uma API para o Sistema de controle de gastos
 
 
 ### Detalhar pessoa
-`GET `/projeto/api/pessoa/{id_pessoa}
+`GET `/healthydelight/api/pessoa/{id_pessoa}
 ```
 {
     "nome":"Luiz",
@@ -96,7 +100,7 @@ Uma API para o Sistema de controle de gastos
 | 404 | não foi encontrado pessoa com id informado
 
 ### Detalhar alimento
-`GET `/projeto/api/alimento/{id_alimento}
+`GET `/healthydelight/api/alimento/{id_alimento}
 ```
 {
     "alimento":"pão",
@@ -115,7 +119,7 @@ Uma API para o Sistema de controle de gastos
 | 404 | não foi encontrado alimento com id informado
 
 ### Detalhar liquido
-`GET `/projeto/api/alimento/{id_alimento}
+`GET `/healthydelight/api/alimento/{id_alimento}
 ```
 {
     "liquido":"água",
