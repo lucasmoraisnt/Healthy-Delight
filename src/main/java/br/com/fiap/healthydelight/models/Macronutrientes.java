@@ -1,34 +1,35 @@
 package br.com.fiap.healthydelight.models;
 
 public class Macronutrientes {
-    private float proteina;
-    private float gordura;
-    private float carboidrato;
-    
-    public float getProteina() {
+    private double proteina;
+    private double gordura;
+    private double carboidrato;
+    public double getProteina() {
         return proteina;
     }
-    public void setProteina(float proteina) {
+    public void setProteina(double proteina) {
         this.proteina = proteina;
     }
-    public float getGordura() {
+    public double getGordura() {
         return gordura;
     }
-    public void setGordura(float gordura) {
+    public void setGordura(double gordura) {
         this.gordura = gordura;
     }
-    public float getCarboidrato() {
+    public double getCarboidrato() {
         return carboidrato;
     }
-    public void setCarboidrato(float carboidrato) {
+    public void setCarboidrato(double carboidrato) {
         this.carboidrato = carboidrato;
     }
 
     public Macronutrientes() {}
-
-    public Macronutrientes(float proteina, float gordura, float carboidrato) {
+    
+    public Macronutrientes(double proteina, double gordura, double carboidrato) {
         this.proteina = proteina;
         this.gordura = gordura;
         this.carboidrato = carboidrato;
     }
+    
+    
 }

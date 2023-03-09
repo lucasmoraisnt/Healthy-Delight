@@ -24,9 +24,9 @@ Uma API para o Sistema de controle de gastos
 | --- | :---: | :---: | ---
 | nome | text | sim | é nome da pessoa
 | id_pessoa | long | sim | é o id do usuário que está utilizando o app
-| peso | float | sim | é o peso do usuário, deve ser informado em kilogramas (kg)
-| altura | float | sim | é a altura da pessoa, deve ser informada em centímetros (cm)
-| imc | float | sim | é o índice de massa corporal da pessoa, será calculado pelo programa
+| peso | double | sim | é o peso do usuário, deve ser informado em kilogramas (kg)
+| altura | double | sim | é a altura da pessoa, deve ser informada em centímetros (cm)
+| imc | double | sim | é o índice de massa corporal da pessoa, será calculado pelo programa
 | idade | int | sim | é a idade da pessoa
 | sexo | texto | sim | é o sexo da pessoa
 
@@ -43,7 +43,7 @@ Uma API para o Sistema de controle de gastos
 | --- | :---: | :---: | ---
 | alimento | text | sim | é o nome do alimento a ser cadastrado
 | id_alimento | long | sim | é o id do alimento a ser cadastrado
-| kcal | float | sim | é a quantidade de kcal que uma porção desse alimento possui
+| kcal | double | sim | é a quantidade de kcal que uma porção desse alimento possui
 | porcao | int | sim | é a quantidade de gramas que uma porção desse alimento possui, deve ser informado em gramas (g)
 
 
@@ -60,7 +60,7 @@ Uma API para o Sistema de controle de gastos
 | --- | :---: | :---: | ---
 | liquido | text | sim | é o nome do liquido a ser cadastrado
 | id_liquido | int | sim | é o id do liquido a ser cadastrado
-| kcal | float | sim | é a quantidade de kcal que uma porção desse liquido possui
+| kcal | double | sim | é a quantidade de kcal que uma porção desse liquido possui
 | porcao | int | sim | é a quantidade de ml que uma porção desse liquido possui, deve ser informado em mililitros (ml)
 
 
@@ -69,9 +69,9 @@ Uma API para o Sistema de controle de gastos
 
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
-| proteina | float | não | é a quantidade de proteinas que o liquido possui em uma porção, deve ser informado em gramas (g)
-| gordura | float | não | é a quantidade de gordura que o liquido possui em uma porção, deve ser informado em gramas (g)
-| carboidrato | float | não | é quantidade de carboidratos que o liquido possui em uma porção, deve ser informado em gramas (g)
+| proteina | double | não | é a quantidade de proteinas que o liquido possui em uma porção, deve ser informado em gramas (g)
+| gordura | double | não | é a quantidade de gordura que o liquido possui em uma porção, deve ser informado em gramas (g)
+| carboidrato | double | não | é quantidade de carboidratos que o liquido possui em uma porção, deve ser informado em gramas (g)
 
 **Códigos de Respostas**
 | código | descrição

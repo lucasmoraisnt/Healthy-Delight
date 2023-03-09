@@ -18,7 +18,15 @@ public class PessoaController {
 
     @GetMapping("/api/pessoa")
     public String mostraDados() {
-        Pessoa pessoa = new Pessoa(9021, "Pedro", 100, 175, 22, 19, "Masculino");
+        Pessoa pessoa = new Pessoa(
+            9021, 
+            "Pedro", 
+            100, 
+            175, 
+            22, 
+            19, 
+            "Masculino"
+        );
 
         return String.format("{id: %s; Nome: %s; Peso: %s kg; Altura: %s cm; Imc: %s; Idade: %s; Sexo: %s}", 
         pessoa.getId_pessoa(), pessoa.getNome(), pessoa.getPeso(), pessoa.getAltura(), pessoa.getImc(), pessoa.getIdade(), pessoa.getSexo());
