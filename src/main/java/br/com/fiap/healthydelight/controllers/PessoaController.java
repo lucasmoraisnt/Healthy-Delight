@@ -16,7 +16,7 @@ public class PessoaController {
     //  Por utilizar o RestController não é mais necessário essa anotação
     //  @ResponseBody //Retorna o corpo da resposta
 
-    @GetMapping("/api/pessoa")
+    @GetMapping("/healthydelight/api/pessoa")
     public String mostraDados() {
         Pessoa pessoa = new Pessoa(
             9021, 

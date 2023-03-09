@@ -8,7 +8,7 @@ import br.com.fiap.healthydelight.models.Liquido;
 @RestController
 public class LiquidoController {
 
-    @GetMapping("/api/liquido")
+    @GetMapping("/healthydelight/api/liquido")
     public String mostraLiquido() {
         Liquido liquido = new Liquido(
                 200, 
