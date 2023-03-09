@@ -23,9 +23,9 @@ Uma API para o Sistema de controle de gastos
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
 | nome | text | sim | é nome da pessoa
-| id_pessoa | int | sim | é o id do usuário que está utilizando o app
-| peso | int | sim | é o peso do usuário, deve ser informado em kilogramas (kg)
-| altura | int | sim | é a altura da pessoa, deve ser informada em centímetros (cm)
+| id_pessoa | long | sim | é o id do usuário que está utilizando o app
+| peso | float | sim | é o peso do usuário, deve ser informado em kilogramas (kg)
+| altura | float | sim | é a altura da pessoa, deve ser informada em centímetros (cm)
 | imc | float | sim | é o índice de massa corporal da pessoa, será calculado pelo programa
 | idade | int | sim | é a idade da pessoa
 | sexo | texto | sim | é o sexo da pessoa
@@ -42,12 +42,12 @@ Uma API para o Sistema de controle de gastos
 | campo | tipo | obrigatório | descriçãos
 | --- | :---: | :---: | ---
 | alimento | text | sim | é o nome do alimento a ser cadastrado
-| id_alimento | int | sim | é o id do alimento a ser cadastrado
-| kcal | int | sim | é a quantidade de kcal que uma porção desse alimento possui
+| id_alimento | long | sim | é o id do alimento a ser cadastrado
+| kcal | float | sim | é a quantidade de kcal que uma porção desse alimento possui
 | porcao | int | sim | é a quantidade de gramas que uma porção desse alimento possui, deve ser informado em gramas (g)
-| proteina | int | não | é a quantidade de proteinas que o alimento possui em uma porção, deve ser informado em gramas (g)
-| gordura | int | não | é a quantidade de gordura que o alimento possui em uma porção, deve ser informado em gramas (g)
-| carboidrato | int | não | é quantidade de carboidratos que o alimento possui em uma porção, deve ser informado em gramas (g)
+| proteina | float | não | é a quantidade de proteinas que o alimento possui em uma porção, deve ser informado em gramas (g)
+| gordura | float | não | é a quantidade de gordura que o alimento possui em uma porção, deve ser informado em gramas (g)
+| carboidrato | float | não | é quantidade de carboidratos que o alimento possui em uma porção, deve ser informado em gramas (g)
 
 **Códigos de Respostas**
 | código | descrição
