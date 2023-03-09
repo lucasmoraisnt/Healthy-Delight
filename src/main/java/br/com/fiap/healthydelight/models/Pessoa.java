@@ -3,7 +3,7 @@ package br.com.fiap.healthydelight.models;
 //Ctrl + . - da opção de gerar os construturores e getters e setters
 
 public class Pessoa {
-    private long id;
+    private long id_pessoa;
     private String nome;
     private float peso;
     private float altura;
@@ -11,12 +11,12 @@ public class Pessoa {
     private int idade;
     private String sexo;
 
-    public long getId() {
-        return id;
+    public long getId_pessoa() {
+        return id_pessoa;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId_pessoa(long id_pessoa) {
+        this.id_pessoa = id_pessoa;
     }
 
     public String getNome() {
@@ -67,8 +67,8 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public Pessoa(long id, String nome, float peso, float altura, float imc, int idade, String sexo) {
-        this.id = id;
+    public Pessoa(long id_pessoa, String nome, float peso, float altura, float imc, int idade, String sexo) {
+        this.id_pessoa = id_pessoa;
         this.nome = nome;
         this.peso = peso;
         this.altura = altura;
@@ -77,4 +77,5 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
+    
 }
